@@ -55,6 +55,11 @@ export default function Sidebar() {
           </Link>
         );
       })}
+
+      {/* Version Tag Indicator at Bottom */}
+      <div className="mt-auto text-[10px] font-bold tracking-wider text-gray-400 select-none">
+        v0.1
+      </div>
     </aside>
   );
 }
