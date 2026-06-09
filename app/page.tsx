@@ -22,6 +22,14 @@ const APPLICATION_TOOLS = [
     href: '/visa-checklists',
     badge: 'New',
   },
+  {
+  id: 'redact',
+  title: 'Document Redactor Stream',
+  description: 'Sanitize private data points. Draw custom blackout bounds directly onto sensitive bank lines or records natively in your client browser context.',
+  icon: '🛡️',
+  href: '/redact',
+  badge: 'New',
+}
 ];
 
 export default function Home() {

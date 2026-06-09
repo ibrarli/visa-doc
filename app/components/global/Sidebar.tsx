@@ -23,6 +23,12 @@ const SIDEBAR_ITEMS: SidebarItem[] = [
     title: 'Visa Checklists',
     iconSrc: '/icons/checklist.svg',
     link: '/visa-checklists',
+  },
+  {
+    id: 'redact',
+    title: 'Secure Redactor',
+    iconSrc: '/icons/lock.svg',
+    link: '/redact',
   }
 ];
 
@@ -64,7 +70,7 @@ export default function Sidebar() {
 
       {/* Version Tag Indicator at Bottom */}
       <div className="mt-auto text-[10px] font-bold tracking-wider text-gray-400 select-none">
-        v0.2
+        v0.3
       </div>
     </aside>
   );
