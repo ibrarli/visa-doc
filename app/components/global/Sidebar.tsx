@@ -16,8 +16,14 @@ const SIDEBAR_ITEMS: SidebarItem[] = [
     id: 'photos',
     title: 'Photo Collage',
     iconSrc: '/icons/photo-collage.svg',
-    link: '/',
+    link: '/photo-collage',
   },
+  {
+    id: 'checklists',
+    title: 'Visa Checklists',
+    iconSrc: '/icons/checklist.svg',
+    link: '/visa-checklists',
+  }
 ];
 
 export default function Sidebar() {
@@ -58,7 +64,7 @@ export default function Sidebar() {
 
       {/* Version Tag Indicator at Bottom */}
       <div className="mt-auto text-[10px] font-bold tracking-wider text-gray-400 select-none">
-        v0.1
+        v0.2
       </div>
     </aside>
   );

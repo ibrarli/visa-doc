@@ -1,16 +1,22 @@
 // app/components/global/Navbar.tsx
 'use client';
 
+import Link from 'next/link';
+
 export default function Navbar() {
   return (
     <header className="h-auto min-h-16 py-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 px-4 sm:px-6 bg-white sticky top-0 z-50 border-b border-gray-100 print:hidden">
       <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-        <span className="font-heading font-bold text-xl tracking-wide text-gray-900">
+        {/* Clickable Title navigating to root dashboard */}
+        <Link 
+          href="/" 
+          className="font-heading font-bold text-xl tracking-wide text-gray-900 cursor-pointer select-none hover:text-amber-500 transition-colors"
+        >
           VisaDoc
-        </span>
+        </Link>
         
         {/* Development Attribution (Visible on all viewports) */}
-        <div className="flex items-center gap-2  border-none md:border-l border-gray-200 lg:pl-4 text-xs font-medium text-gray-400">
+        <div className="flex items-center gap-2 border-none md:border-l border-gray-200 lg:pl-4 text-xs font-medium text-gray-400">
           <span>
             Developed by{' '}
             <a 
